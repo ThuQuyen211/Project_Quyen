@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Lưới có các cột có độ rộng tối thiểu 200px và mở rộng tối đa theo nội dung */
+    grid-gap: 20px; /* Khoảng cách giữa các cuốn sách */
+  }
+  
+  .book {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 50px; /* Khoảng cách bên phải của mỗi cuốn sách */
+    margin-bottom: 20px; /* Khoảng cách dưới của mỗi cuốn sách */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng khi di chuột qua */
+    width: 230px; /* Đảm bảo chiều cao của khung bao luôn bằng nhau */
+  }
+  
+  .book:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng đổ bóng mạnh hơn khi hover */
+    transform: translateY(-5px); /* Dịch chuyển lên trên khi di chuột vào */
+  }
+  
+  .book .img-box {
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .book img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .book h6 {
+    margin: 10px 0; /* Khoảng cách trên và dưới của tiêu đề */
+    font-size: 18px; /* Kích thước chữ */
+    color: #333; /* Màu chữ */
+    font-weight: bold; /* Độ đậm của chữ */
+    text-transform: uppercase; /* Chuyển đổi chữ thành chữ in hoa */
+    text-align: center; /* Căn giữa tiêu đề */
+    font-family: 'Roboto', sans-serif; /* Sử dụng phông chữ Roboto từ Google Fonts */
+  }
+  
+  .book .detail-box {
+    padding: 10px;
+  }
+  .book .detail-box h6 {
+    margin: 5px 0; /* Khoảng cách nhỏ hơn cho các thông tin phụ */
+    font-size: 14px; /* Kích thước chữ cho thông tin phụ */
+    color: #666; /* Màu chữ cho thông tin phụ */
+  }
+  
+  .book .detail-box h6 span {
+    font-weight: bold; /* Độ đậm của chữ trong thẻ span */
+    color: #333; /* Màu chữ của thẻ span */
+  }
+  .book h7{
+    text-align: center;
+  }
